@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600;700&display=swap');
+body{
+  background: $Alabaster;
+}
+main{
+  min-height: 650px;
+}
+.navbar-toggler{
+  border: 2px solid $GableGreen;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  @include media-breakpoint-up(sm){
+    margin-right: 0;
+  }
+span{
+  width: 20px;
+  height: 2px;
+  right: 8px;
+  position: absolute;
+  background: $yellow;
+}
+}
+.navbar-toggler span:first-child {
+  top: 10px;
+}
+.navbar-toggler span:nth-child(2) {
+  top: 17px;
+}
+.navbar-toggler span:last-child {
+  top: 24px;
+}
+.navbar-collapse{
+z-index: 10;
+background: $Firefly;
+border: 2px solid $GableGreen;
+li:hover{
+  color: $yellow;
+}
+@include media-breakpoint-up(lg){
+  background: none;
+}
+}
+.navbar{
+    height: 100px;
+  ul.navbar-nav>li{
+      padding: 0 7px 0 46px;
+      position: relative;
+&:not(:first-child):after{
+  @include media-breakpoint-up(lg){
+  content: '';
+      width: 5px;
+      height: 5px;
+      background-color: $yellow;
+      position: absolute;
+      left: 16px;
+      top: 14px;
+    }
+  }
+  }
+  }
+  .logotype{
+    height: 91px;
+    margin-left: 10px;
+    @include media-breakpoint-up(sm){
+      margin-left: 0;
+    }
+      @include media-breakpoint-up(lg){
+        height: 57px;
+      }
+    }
+.logo{
+    padding-left: 5px;
+font-size: 29px;
+letter-spacing: 4px;
+color: $WhiteColor;
+padding-top: 18px;
+&:after{
+  content: 'THEME';
+font-size: 9px;
+position: relative;
+display: block;
+top: 0;
+left: 1px;
+letter-spacing: 9px;
+}
+  }
+.intro{
+  background: $Firefly;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+  .intro a{
+    text-decoration: none;
+  }
+  .button{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $yellow;
+ bottom: 0;
+ @include media-breakpoint-up(sm){
+  width: 60px;
+  height: 60px;
+  }
+ left: calc(50% - 30px);
+  &:hover{
+    background: $WhiteColor;
+  }
+ &:before{
+    content: "\e900";
+  font-size: 18px;
+  position: relative;
+  left: 0px;
+  top: 1px;
+ }
+  &:hover:before{
+    color: $yellow;
+  }
+ }
+.banner{
+  background: $GableGreen;
+  height: 370px;
+  width: 100%;
+  text-align: center;
+    h1{
+  letter-spacing: -2px;
+  padding-left: 2px;
+}
+.btn:hover{
+background: $WhiteColor;
+color: $yellow;
+border: none;
+}
+}
+strong{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 52px;
+  color: $black;
+}
+.block{
+  text-align: center;
+  height: 591px;
+}
+.title h2{
+  font-weight: 400;
+  color: $Emperor;
+  font-size: 16px;
+  margin: 61px 0 20px 0;
+}
+.options strong{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 52px;
+  color: $black;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background: $yellow;
+    width: 171px;
+    left: 43px;
+    top: 59px;
+    @include media-breakpoint-up(sm) {
+    left: 46px;
+  }
+   @include media-breakpoint-up(lg) {
+    left: 44px;
+    top: 58px;
+   }
+}
+}
+.services strong{
+  font-size: 20px;
+}
+p{
+  color: $DoveGray;
+  font-weight: 300;
+  line-height: 25px;
+  padding-top: 43px;
+}
+.services p{
+    padding-top: 19px;
+}
+.services{
+  padding-top: 23px;
+}
+.icon span{
+  width: 106px;
+  height: 106px;
+  border: 1px solid transparent;
+  background: $yellow;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  position: relative;
+  &.active,
+  &:hover{
+    background: $WhiteColor;
+    border-color: $Shark;
+  }
+}
+.icon-web:before {
+  content: "\e904";
+   font-size: 35px;
+   position: absolute;
+   left: 35px;
+   top: 35px;
+}
+   .icon-web:before{
+   color: $yellow;
+}
+.icon-graphic:before {
+  content: "\e902";
+  font-size: 38px;
+  position: absolute;
+  left: 34px;
+   top: 35px;
+}
+.icon-graphic:hover::before{
+   color: $yellow;
+}
+.icon-photography:before {
+  content: "\e903";
+  font-size: 31px;
+  position: absolute;
+  left: 33px;
+   top: 37px;
+}
+.icon-photography:hover::before{
+   color: $yellow;
+}
+.icon-developing:before {
+  content: "\e901";
+  font-size: 40px;
+  position: absolute;
+  left: 32px;
+   top: 34px;
+}
+.icon-developing:hover::before{
+   color: $yellow;
+}

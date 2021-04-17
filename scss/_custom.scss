@@ -1,0 +1,38 @@
+@import "_variables";
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+) !default;
+$font-family-base: "Oswald", sans-serif;
+$font-weight-base: 600;
+$dark: $GableGreen;
+$container-padding-x: 0rem;
+$line-height-base: 1.1;
+// Navbar
+$navbar-dark-color: $WhiteColor;
+$navbar-dark-active-color: $Supernova;
+$navbar-dark-hover-color: $Supernova;
+$nav-link-font-size: 14px;
+$navbar-nav-link-padding-x: none;
+
+// Text
+$paragraph-margin-bottom: 3.6rem !default;
+$h1-font-size: 4.4rem;
+$headings-margin-bottom: 2.6rem;
+$headings-color: $WhiteColor;
+$headings-font-weight: 600;
+$grid-gutter-width: 0rem;
+$headings-line-height: 1.15;
+
+// btn
+$btn-font-size: 1.25rem;
+$btn-font-weight: 600;
+$input-btn-padding-y: 1.1rem;
+$input-btn-padding-x:  3.05rem;
+$btn-border-radius: none;
+$btn-focus-width: none;
+$input-btn-focus-box-shadow: none;
+$btn-border-width: none;
+$yellow: $yellowbtn
